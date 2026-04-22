@@ -23,7 +23,7 @@ EIGEN_NIEUWSREGELS = [
 ]
 
 st.set_page_config(
-    page_title="Muziekstad Weer",
+    page_title="Muziekstad Weerbericht",
     page_icon="🌤️",
     layout="wide",
     initial_sidebar_state="collapsed",
