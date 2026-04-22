@@ -11,7 +11,7 @@ import streamlit as st
 
 LATITUDE = 51.5555
 LONGITUDE = 5.0913
-LOCATION_NAME = "Muziekstad"
+LOCATION_NAME = "Nederland"
 
 # Eigen nieuwsregels voor autoplay / voorlezen
 EIGEN_NIEUWSREGELS = [
@@ -19,7 +19,7 @@ EIGEN_NIEUWSREGELS = [
 ]
 
 st.set_page_config(
-    page_title="Muziekstad Weer",
+    page_title="Muziekstad Weerbericht",
     page_icon="🌤️",
     layout="wide",
     initial_sidebar_state="collapsed",
