@@ -758,7 +758,7 @@ def main() -> None:
         render_news_ticker(build_news_items(hourly_df, daily_df, location_name))
         render_location_picker()
 
-        tab1, tab2, tab3 = st.tabs(["Overzicht", "Komende Uren", "10 Daagse Weer"])
+        tab1, tab2, tab3 = st.tabs(["Overzicht", "Komende Uren", "10-Daagse Weer"])
 
         with tab1:
             render_summary(hourly_df, daily_df)
