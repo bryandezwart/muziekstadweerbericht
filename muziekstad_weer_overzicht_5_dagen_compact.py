@@ -16,7 +16,7 @@ LOCATION_NAME = "Muziekstad"
 # Eigen nieuwsregels voor autoplay / voorlezen
 EIGEN_NIEUWSREGELS = [
     "Dit is jouw weerupdate!",
-    "Je luistert naar Radio Muziekstad.",
+    "Actuele weersvoorspellingen",
     "Hier is het weer van vandaag en de komende uren.",
     "Blijf luisteren voor muziek, actualiteit en lokale updates.",
 ]
