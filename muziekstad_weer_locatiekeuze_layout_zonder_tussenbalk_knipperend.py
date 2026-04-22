@@ -740,7 +740,7 @@ def render_daily(daily_df: pd.DataFrame, title: str = "10-daagse verwachting", c
 def render_footer() -> None:
     st.markdown(
         html_block(
-            "<div class='footer-note'>Copyright: <a href='https://brandingtotaal.nl' target='_blank' rel='noopener noreferrer'>Branding Totaal</a></div>"
+            "<div class='footer-note'>Copyright © <a href='https://brandingtotaal.nl' target='_blank' rel='noopener noreferrer'>Branding Totaal</a></div>"
         ),
         unsafe_allow_html=True,
     )
@@ -758,7 +758,7 @@ def main() -> None:
         render_news_ticker(build_news_items(hourly_df, daily_df, location_name))
         render_location_picker()
 
-        tab1, tab2, tab3 = st.tabs(["Overzicht", "Komende Uren", "10-Daagse Weer"])
+        tab1, tab2, tab3 = st.tabs(["Overzicht", "Komende uren", "10-daagse weer"])
 
         with tab1:
             render_summary(hourly_df, daily_df)
