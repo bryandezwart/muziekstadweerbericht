@@ -15,7 +15,7 @@ LOCATION_NAME = "Nederland"
 
 # Eigen nieuwsregels voor autoplay / voorlezen
 EIGEN_NIEUWSREGELS = [
-    "Dit is jouw weerupdate en actuele weersvoorspellingen",
+    "Dit is een weerupdate van Nederland.",
 ]
 
 st.set_page_config(
