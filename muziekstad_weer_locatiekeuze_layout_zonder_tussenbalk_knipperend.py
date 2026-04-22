@@ -19,7 +19,7 @@ DEFAULT_LOCATION = {
 
 # Eigen nieuwsregels voor autoplay / voorlezen
 EIGEN_NIEUWSREGELS = [
-    "Actuele Weeroverzicht",
+    "Actuele Weeroverzicht voor Radio Muziekstad",
 ]
 
 st.set_page_config(
