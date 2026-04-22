@@ -735,7 +735,7 @@ def render_daily(daily_df: pd.DataFrame, title: str = "10-daagse verwachting", c
 def render_footer() -> None:
     st.markdown(
         html_block(
-            "<div class='footer-note'>Copyright: <a href='https://brandingtotaal.nl' target='_blank' rel='noopener noreferrer'>Branding Totaal © /</div>"
+            "<div class='footer-note'>Copyright: <a href='https://brandingtotaal.nl' target='_blank' rel='noopener noreferrer'>Branding Totaal©</div>"
         ),
         unsafe_allow_html=True,
     )
