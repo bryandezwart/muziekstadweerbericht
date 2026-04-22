@@ -19,7 +19,7 @@ DEFAULT_LOCATION = {
 
 # Eigen nieuwsregels voor autoplay / voorlezen
 EIGEN_NIEUWSREGELS = [
-    "Actuele weersvoorspellingen",
+    "Dit zijn actuele weersvoorspellingen",
 ]
 
 st.set_page_config(
