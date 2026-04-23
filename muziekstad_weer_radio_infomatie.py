@@ -18,14 +18,11 @@ DEFAULT_LOCATION = {
 }
 
 EIGEN_NIEUWSREGELS = [
-    "Dit is jouw weerupdate!",
-    "Je luistert naar Radio Muziekstad.",
-    "Hier is het weer van vandaag en de komende uren.",
-    "Blijf luisteren voor muziek, actualiteit en lokale updates.",
+    "Actuele weer updates voor radio Muziekstad!",
 ]
 
 st.set_page_config(
-    page_title="Muziekstad Weer",
+    page_title="Muziekstad Weerbericht",
     page_icon="🌤️",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -846,7 +843,7 @@ def render_radio_day_picker(daily_df: pd.DataFrame, location_name: str) -> None:
         unsafe_allow_html=True,
     )
 
-    st.markdown("<div class='day-pick-note'>Klik op een dagknop, bijvoorbeeld ‘Vrijdag · vr 24 apr’, om de belangrijkste info en radiotekst te zien.</div>", unsafe_allow_html=True)
+    st.markdown("<div class='day-pick-note'>Klik op een dagknop, bijvoorbeeld ‘Vrijdag · vr 24 apr’, om de belangrijkste info en bullentin te zien.</div>", unsafe_allow_html=True)
 
     subset = daily_df.head(10).reset_index(drop=True)
     for start in range(0, len(subset), 5):
@@ -896,7 +893,7 @@ def render_radio_day_picker(daily_df: pd.DataFrame, location_name: str) -> None:
 
     st.markdown("#### Radiotekst kort")
     st.text_area(
-        "Radiotekst kort",
+        "Weerbulletin kort",
         value=short,
         height=110,
         key=f"radio_short_{selected_idx}",
@@ -904,9 +901,9 @@ def render_radio_day_picker(daily_df: pd.DataFrame, location_name: str) -> None:
     )
     st.caption("Geschikt voor een kort bulletin of snelle vooruitblik in je programma.")
 
-    st.markdown("#### Radiotekst uitgebreid")
+    st.markdown("#### Weerbulletin uitgebreid")
     st.text_area(
-        "Radiotekst uitgebreid",
+        "Weerbulletin",
         value=extended,
         height=145,
         key=f"radio_extended_{selected_idx}",
