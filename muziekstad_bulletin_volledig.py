@@ -18,14 +18,11 @@ DEFAULT_LOCATION = {
 }
 
 EIGEN_NIEUWSREGELS = [
-    "Dit is jouw weerupdate!",
-    "Je luistert naar Radio Muziekstad.",
-    "Hier is het weer van vandaag en de komende uren.",
-    "Blijf luisteren voor muziek, actualiteit en lokale updates.",
+    "Dit is jouw weerupdate voor Radio Muziekstad!",
 ]
 
 st.set_page_config(
-    page_title="Muziekstad Weer",
+    page_title="Muziekstad Weerbullentin",
     page_icon="🌤️",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -838,7 +835,7 @@ def render_radio_day_picker(daily_df: pd.DataFrame, location_name: str) -> None:
         html_block(
             """
             <div class="radio-card">
-                <div class="section-title">Weer bulletin per dag</div>
+                <div class="section-title">Weerbulletin per dag</div>
                 <div class="section-subtitle">Klik op een dag hieronder en kopieer direct een korte voorleestekst voor je programma-opname.</div>
             </div>
             """
@@ -894,9 +891,9 @@ def render_radio_day_picker(daily_df: pd.DataFrame, location_name: str) -> None:
         unsafe_allow_html=True,
     )
 
-    st.markdown("#### Weer bulletin kort")
+    st.markdown("#### Weerbulletin kort")
     st.text_area(
-        "Weer bulletin kort",
+        "Weerbulletin kort",
         value=short,
         height=110,
         key=f"radio_short_{selected_idx}",
@@ -904,9 +901,9 @@ def render_radio_day_picker(daily_df: pd.DataFrame, location_name: str) -> None:
     )
     st.caption("Geschikt voor een kort bulletin of snelle vooruitblik in je programma.")
 
-    st.markdown("#### Weer bulletin uitgebreid")
+    st.markdown("#### Weerbulletin uitgebreid")
     st.text_area(
-        "Weer bulletin uitgebreid",
+        "Weerbulletin uitgebreid",
         value=extended,
         height=145,
         key=f"radio_extended_{selected_idx}",
@@ -919,7 +916,7 @@ def render_radio_day_picker(daily_df: pd.DataFrame, location_name: str) -> None:
 def render_footer() -> None:
     st.markdown(
         html_block(
-            "<div class='footer-note'>Copyright: <a href='https://brandingtotaal.nl' target='_blank' rel='noopener noreferrer'>Branding Totaal</a></div>"
+            "<div class='footer-note'>Copyright: <a href='https://brandingtotaal.nl' target='_blank' rel='noopener noreferrer'>Branding Totaal © </a></div>"
         ),
         unsafe_allow_html=True,
     )
