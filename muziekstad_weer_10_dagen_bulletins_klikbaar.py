@@ -896,7 +896,7 @@ def render_bulletin_picker(daily_df: pd.DataFrame, location_name: str) -> None:
         html_block(
             """
             <div class="radio-card">
-                <div class="section-title">Weer bulletin per dag</div>
+                <div class="section-title">Weerbulletin per dag</div>
                 <div class="section-subtitle">Klik op een dag, bijvoorbeeld ‘Vrijdag · vr 24 apr’, en kopieer daarna direct een kort of lang bulletin voor je radio-opname.</div>
             </div>
             """
@@ -976,7 +976,7 @@ def render_bulletin_picker(daily_df: pd.DataFrame, location_name: str) -> None:
 def render_footer() -> None:
     st.markdown(
         html_block(
-            "<div class='footer-note'>Copyright: <a href='https://brandingtotaal.nl' target='_blank' rel='noopener noreferrer'>Branding Totaal</a></div>"
+            "<div class='footer-note'>Copyright: <a href='https://brandingtotaal.nl' target='_blank' rel='noopener noreferrer'>Branding Totaal © </a></div>"
         ),
         unsafe_allow_html=True,
     )
@@ -994,7 +994,7 @@ def main() -> None:
         render_news_ticker(build_news_items(hourly_df, daily_df, location_name))
         render_location_picker()
 
-        tab1, tab2, tab3 = st.tabs(["Overzicht", "Uur per uur", "10 dagen"])
+        tab1, tab2, tab3 = st.tabs(["Overzicht", "Komende uren", "10 dagen"])
 
         with tab1:
             render_summary(hourly_df, daily_df)
