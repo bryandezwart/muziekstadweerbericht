@@ -19,14 +19,11 @@ DEFAULT_LOCATION = {
 
 # Eigen nieuwsregels voor autoplay / voorlezen
 EIGEN_NIEUWSREGELS = [
-    "Dit is jouw weerupdate!",
-    "Je luistert naar Radio Muziekstad.",
-    "Hier is het weer van vandaag en de komende uren.",
-    "Blijf luisteren voor muziek, actualiteit en lokale updates.",
+    "Dit zijn weervoorspellimngen voor Radio Muziekstad!",
 ]
 
 st.set_page_config(
-    page_title="Muziekstad Weer",
+    page_title="Muziekstad Weerbullentins",
     page_icon="🌤️",
     layout="wide",
     initial_sidebar_state="collapsed",
