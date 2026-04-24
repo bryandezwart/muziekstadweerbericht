@@ -953,7 +953,7 @@ def render_bulletin_picker(daily_df: pd.DataFrame, location_name: str) -> None:
         html_block(
             """
             <div class="radio-card">
-                <div class="section-title">Weer bulletin per dag</div>
+                <div class="section-title">Weerbulletins per dag</div>
                 <div class="section-subtitle">Klik op een dag, bijvoorbeeld ‘Vrijdag · vr 24 apr’, en kopieer daarna direct een kort of lang bulletin voor je radio-opname.</div>
             </div>
             """
