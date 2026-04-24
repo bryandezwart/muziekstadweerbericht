@@ -20,14 +20,11 @@ DEFAULT_LOCATION = {
 
 # Eigen nieuwsregels voor autoplay / voorlezen
 EIGEN_NIEUWSREGELS = [
-    "Dit is jouw weerupdate!",
-    "Je luistert naar Radio Muziekstad.",
-    "Hier is het weer van vandaag en de komende uren.",
-    "Blijf luisteren voor muziek, actualiteit en lokale updates.",
+    "Dit zijn actuele weerbullentins voor Radio Muziekstad!",
 ]
 
 st.set_page_config(
-    page_title="Muziekstad Weer",
+    page_title="Muziekstad Weerbullentins",
     page_icon="🌤️",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -1036,7 +1033,7 @@ def render_bulletin_picker(daily_df: pd.DataFrame, location_name: str) -> None:
 def render_footer() -> None:
     st.markdown(
         html_block(
-            "<div class='footer-note'>Copyright: <a href='https://brandingtotaal.nl' target='_blank' rel='noopener noreferrer'>Branding Totaal</a></div>"
+            "<div class='footer-note'>Copyright: <a href='https://brandingtotaal.nl' target='_blank' rel='noopener noreferrer'> Branding Totaal © </a></div>"
         ),
         unsafe_allow_html=True,
     )
@@ -1055,7 +1052,7 @@ def main() -> None:
         render_news_ticker(build_news_items(current, hourly_df, daily_df, location_name))
         render_location_picker()
 
-        tab1, tab2, tab3 = st.tabs(["Overzicht", "Uur per uur", "10 dagen"])
+        tab1, tab2, tab3 = st.tabs(["Overzicht", "Komende uren", "10 dagen"])
 
         with tab1:
             render_summary(current, hourly_df, daily_df)
