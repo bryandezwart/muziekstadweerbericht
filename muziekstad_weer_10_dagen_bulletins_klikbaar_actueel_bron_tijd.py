@@ -23,7 +23,7 @@ EIGEN_NIEUWSREGELS = [
 ]
 
 st.set_page_config(
-    page_title="Muziekstad Weerbullentin",
+    page_title="Muziekstad Weerbullentins",
     page_icon="🌤️",
     layout="wide",
     initial_sidebar_state="collapsed",
