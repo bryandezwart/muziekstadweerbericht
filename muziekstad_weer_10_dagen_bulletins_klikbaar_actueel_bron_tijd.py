@@ -19,14 +19,11 @@ DEFAULT_LOCATION = {
 
 # Eigen nieuwsregels voor autoplay / voorlezen
 EIGEN_NIEUWSREGELS = [
-    "Dit is jouw weerupdate!",
-    "Je luistert naar Radio Muziekstad.",
-    "Hier is het weer van vandaag en de komende uren.",
-    "Blijf luisteren voor muziek, actualiteit en lokale updates.",
+    "Dit is jouw weerupdate voor RadioMuziekstad!",
 ]
 
 st.set_page_config(
-    page_title="Muziekstad Weer",
+    page_title="Muziekstad Weerbullentin",
     page_icon="🌤️",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -934,7 +931,7 @@ def render_bulletin_picker(daily_df: pd.DataFrame, location_name: str) -> None:
         html_block(
             """
             <div class="radio-card">
-                <div class="section-title">Weer bulletin per dag</div>
+                <div class="section-title">Weerbulletin per dag</div>
                 <div class="section-subtitle">Klik op een dag, bijvoorbeeld ‘Vrijdag · vr 24 apr’, en kopieer daarna direct een kort of lang bulletin voor je radio-opname.</div>
             </div>
             """
@@ -1014,7 +1011,7 @@ def render_bulletin_picker(daily_df: pd.DataFrame, location_name: str) -> None:
 def render_footer() -> None:
     st.markdown(
         html_block(
-            "<div class='footer-note'>Copyright: <a href='https://brandingtotaal.nl' target='_blank' rel='noopener noreferrer'>Branding Totaal</a></div>"
+            "<div class='footer-note'>Copyright: <a href='https://brandingtotaal.nl' target='_blank' rel='noopener noreferrer'> Branding Totaal © </a></div>"
         ),
         unsafe_allow_html=True,
     )
